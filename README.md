@@ -77,9 +77,7 @@ The intended unloading sequence is:
 10. Continue the storage and retrieval loop.
 
 5. MIDDLE UNLOADING ROUTE
-
-The revised route is:
-
+   
 Middle crane
 > Receiving conveyor with fork clearance
 > One free roller
@@ -96,8 +94,7 @@ M Exit Curve CW
 The receiving and curved conveyors must remain stopped
 during placement and begin discharging after fork retraction.
 
-
-7. PAUSE, RESUME, STOP, AND RESET
+6. PAUSE, RESUME, STOP, AND RESET
 
 PAUSE:
 Use Pause for temporary inspection.
@@ -121,48 +118,3 @@ TIME SCALE:
 Begin testing at 1x.
 Check transfers at normal speed before testing other speeds.
 Do not assume faster simulation speeds preserve pallet stability.
-
-
-8. WHAT TO CHECK WHILE RUNNING
-
-- Each loading station receives only its intended box.
-- The box remains supported during pickup and placement.
-- Forks retract before crane travel.
-- Cranes align with the selected rack positions.
-- Boxes do not collide with rack beams or crane uprights.
-- The middle conveyor starts after fork retraction.
-- Boxes cross the free roller and curve without catching.
-- The exit sensor detects the box and clears afterward.
-- Inventory changes only after completed operations.
-
-Avoid forcing sensor or actuator values during Auto mode.
-
-
-9. IF SOMETHING GOES WRONG
-
-If nothing moves:
-Check the driver connection, matching files, Auto selection,
-Run state, and whether either application is paused.
-
-If a box falls or a crane hits the rack:
-Stop the test and inspect alignment and fork clearance.
-Do not try to correct a physical collision by increasing speed.
-
-If inventory does not match the rack contents:
-Stop and reset the scene and controller together.
-
-If a box jams at the exit:
-Inspect conveyor alignment, transfer height, direction,
-and whether the exit sensor has cleared.
-
-
-10. CURRENT VERIFICATION STATUS
-
-Static geometry, I/O wiring, and position-calculation checks
-passed for the revised middle-clearance project.
-
-The revised scene has not yet been verified through a complete
-live Factory I/O run.
-
-Pallet stability, transfer timing, and the separately reported
-boxes falling during rack storage still require live testing.
