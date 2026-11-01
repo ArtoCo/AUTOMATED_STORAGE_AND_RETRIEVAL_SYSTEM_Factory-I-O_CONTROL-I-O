@@ -1,7 +1,7 @@
 README — AUTOMATED STORAGE AND RETRIEVAL SYSTEM
 Factory I/O + CONTROL I/O
 
-1. PROJECT PURPOSE
+-1. PROJECT PURPOSE
 
 This project simulates an automated warehouse with:
 - Three stacker cranes.
@@ -12,9 +12,8 @@ This project simulates an automated warehouse with:
 L1 and L2 store incoming boxes.
 The middle crane retrieves stored boxes and sends them to the exit.
 
-2. HOW TO START
+-2. HOW TO START
    
-
 1. Open Factory I/O.
 2. Stop any currently running simulation.
 3. Open Warehouse_Autotz.factoryio.
@@ -34,7 +33,7 @@ The middle crane retrieves stored boxes and sends them to the exit.
 With the default synchronization settings, CONTROL I/O
 also puts Factory I/O into Run mode.
 
-3. AUTOMATIC STORAGE SEQUENCE
+-3. AUTOMATIC STORAGE SEQUENCE
 
 The intended operating sequence is:
 
@@ -51,7 +50,7 @@ The loading cranes alternate storage operations.
 Storage begins at the programmed farthest, upper position
 and follows the controller's position order.
 
-4. AUTOMATIC RETRIEVAL SEQUENCE
+-4. AUTOMATIC RETRIEVAL SEQUENCE
 
 The current control design permits a new retrieval when
 BOTH storage groups contain at least 27 stored boxes.
@@ -77,7 +76,7 @@ The intended unloading sequence is:
 9. Confirm passage at the exit sensor.
 10. Continue the storage and retrieval loop.
 
-5. MIDDLE UNLOADING ROUTE
+-5. MIDDLE UNLOADING ROUTE
    
 Middle crane
 > Receiving conveyor with fork clearance
@@ -95,7 +94,7 @@ M Exit Curve CW
 The receiving and curved conveyors must remain stopped
 during placement and begin discharging after fork retraction.
 
-6. PAUSE, RESUME, STOP, AND RESET
+-6. PAUSE, RESUME, STOP, AND RESET
 
 PAUSE:
 Use Pause for temporary inspection.
