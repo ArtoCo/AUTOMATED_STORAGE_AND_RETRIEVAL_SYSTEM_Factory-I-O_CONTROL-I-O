@@ -13,6 +13,7 @@ L1 and L2 store incoming boxes.
 The middle crane retrieves stored boxes and sends them to the exit.
 
 2. HOW TO START
+   
 
 1. Open Factory I/O.
 2. Stop any currently running simulation.
