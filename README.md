@@ -77,7 +77,6 @@ The intended unloading sequence is:
 10. Continue the storage and retrieval loop.
 
 -5. MIDDLE UNLOADING ROUTE
-   
 Middle crane
 > Receiving conveyor with fork clearance
 > One free roller
